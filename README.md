@@ -1,5 +1,5 @@
 # CHAUFFEUR-Self-Driving-Benchmark-Suite
-1. Developed CHAUFFEUR, an open-source self-driving vehicle benchmark suite on Gazebo, optimized for embedded platforms like Drive PX2.
-2. Integrated YOLOv3 for 91% accurate object detection, with Structure from Motion for 3D reconstruction and lane detection.
-3. Improved vehicle localization using an Extended Kalman Filter, fusing data from IMU, GPS, and LIDAR sensors.
-4. Achieved real-time path planning and obstacle avoidance with SLAM and PID controllers.
+1. Developed CHAUFFEUR, an open-source benchmark suite for simulating self-driving vehicle systems, using Gazebo for sensor-based tasks like camera and LIDAR integration, focusing on resource-constrained, real-time embedded platforms like NVIDIA Jetson TX2 and Drive PX2.
+2. Implemented YOLOv3 for object detection and tracking with an accuracy of 91%, along with Structure from Motion (SFM) for 3D reconstruction and lane detection through image processing techniques (perspective transform, curvature estimation).
+3. Utilized Extended Kalman Filter (EKF) for improved vehicle localization, combining data from sensors like IMU, GPS, and LIDAR to handle drift and noise in the system’s position estimates.
+4. Achieved efficient path planning using a Kalman filter-based SLAM algorithm and PID controllers for actuation, successfully navigating through the environment while avoiding obstacles in the simulated world.
